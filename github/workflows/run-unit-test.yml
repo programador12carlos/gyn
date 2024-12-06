@@ -1,17 +1,31 @@
-name: RODAR TESTES UNITARIOS
+name: RODAR TESTES UNITÁRIOS
 
-on: [push]
+on: 
+  push:
+    branches:
+      - main # Executa apenas quando há push na branch "main"
 
 jobs:
   rodar-testes-unitarios:
-    name: rodar testes unitarios
+    name: Rodar Testes Unitários
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 20
-        cache: 'npm'
-    - run: npm ci
-    - run: npm test
+      # Passo 1: Fazer o checkout do repositório
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      # Passo 2: Configurar o Node.js
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      # Passo 3: Instalar dependências
+      - name: Instalar dependências
+        run: npm ci
+
+      # Passo 4: Executar testes
+      - name: Rodar testes unitários
+        run: npm test
