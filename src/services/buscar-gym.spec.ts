@@ -18,7 +18,7 @@ describe('testes do resumo checkin', () => {
       title: 'type',
       descricption: 'melhor do mundo',
       phone: '956467976',
-      latitule: 0,
+      latitude: 0,
       longitude: 0,
     })
 
@@ -27,7 +27,7 @@ describe('testes do resumo checkin', () => {
       title: 'java',
       descricption: 'melhor do mundo',
       phone: '95646356',
-      latitule: 0,
+      latitude: 0,
       longitude: 0,
     })
 
@@ -46,7 +46,7 @@ describe('testes do resumo checkin', () => {
         title: `type ${i}`,
         descricption: 'melhor do mundo',
         phone: '95646356',
-        latitule: 0,
+        latitude: 0,
         longitude: 0,
       })
     }

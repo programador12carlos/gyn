@@ -30,6 +30,6 @@ describe('tested get user per id', () => {
       userId: users.id,
     })
 
-    await expect(user.id).toEqual(expect.any(String))
+    expect(user.id).toEqual(expect.any(String))
   })
 })

@@ -40,6 +40,7 @@ Funçoes do banco
       name: data.name,
       email: data.email,
       password_has: data.password_has,
+      role: (data as any).role || 'MEMBER', // Definir a role padrão como 'MEMBER'
       create_at: new Date(),
     }
     this.items.push(user)

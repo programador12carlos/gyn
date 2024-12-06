@@ -22,7 +22,7 @@ describe('TESTES DE BUSCAR ACADEMIAS PROXIMAS', () => {
       title: 'Academia Perto',
       descricption: 'melhor do mundo',
       phone: '956467976',
-      latitule: -27.2092052,
+      latitude: -27.2092052,
       longitude: -49.6401091,
     })
 
@@ -31,7 +31,7 @@ describe('TESTES DE BUSCAR ACADEMIAS PROXIMAS', () => {
       title: 'Academia distante',
       descricption: 'melhor do mundo',
       phone: '956467976',
-      latitule: -27.8610928,
+      latitude: -27.8610928,
       longitude: -49.5229501,
     })
 
